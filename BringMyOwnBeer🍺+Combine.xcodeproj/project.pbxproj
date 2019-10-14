@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DEAA0DD2354BAED006A0C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0DC2354BAED006A0C2F /* AppDelegate.swift */; };
+		7DEAA0DF2354BAED006A0C2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0DE2354BAED006A0C2F /* SceneDelegate.swift */; };
+		7DEAA0E12354BAED006A0C2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0E02354BAED006A0C2F /* ContentView.swift */; };
+		7DEAA0E32354BAF0006A0C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEAA0E22354BAF0006A0C2F /* Assets.xcassets */; };
+		7DEAA0E62354BAF0006A0C2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEAA0E52354BAF0006A0C2F /* Preview Assets.xcassets */; };
+		7DEAA0E92354BAF0006A0C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DEAA0E72354BAF0006A0C2F /* LaunchScreen.storyboard */; };
+		7DEAA0F42354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0F32354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift */; };
+		7DEAA0FF2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0FE2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DEAA0F02354BAF0006A0C2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DEAA0D12354BAED006A0C2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DEAA0D82354BAED006A0C2F;
+			remoteInfo = "BringMyOwnBeer🍺+Combine";
+		};
+		7DEAA0FB2354BAF0006A0C2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DEAA0D12354BAED006A0C2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DEAA0D82354BAED006A0C2F;
+			remoteInfo = "BringMyOwnBeer🍺+Combine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7DEAA0D92354BAED006A0C2F /* BringMyOwnBeer🍺+Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BringMyOwnBeer🍺+Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEAA0DC2354BAED006A0C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DEAA0DE2354BAED006A0C2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7DEAA0E02354BAED006A0C2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7DEAA0E22354BAF0006A0C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DEAA0E52354BAF0006A0C2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7DEAA0E82354BAF0006A0C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DEAA0EA2354BAF0006A0C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEAA0EF2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BringMyOwnBeer🍺+CombineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEAA0F32354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BringMyOwnBeer___CombineTests.swift"; sourceTree = "<group>"; };
+		7DEAA0F52354BAF0006A0C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEAA0FA2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BringMyOwnBeer🍺+CombineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEAA0FE2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BringMyOwnBeer___CombineUITests.swift"; sourceTree = "<group>"; };
+		7DEAA1002354BAF0006A0C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DEAA0D62354BAED006A0C2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEAA0EC2354BAF0006A0C2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEAA0F72354BAF0006A0C2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DEAA0D02354BAED006A0C2F = {
+			isa = PBXGroup;
+			children = (
+				7DEAA0DB2354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */,
+				7DEAA0F22354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests */,
+				7DEAA0FD2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests */,
+				7DEAA0DA2354BAED006A0C2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DEAA0DA2354BAED006A0C2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DEAA0D92354BAED006A0C2F /* BringMyOwnBeer🍺+Combine.app */,
+				7DEAA0EF2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests.xctest */,
+				7DEAA0FA2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DEAA0DB2354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */ = {
+			isa = PBXGroup;
+			children = (
+				7DEAA0DC2354BAED006A0C2F /* AppDelegate.swift */,
+				7DEAA0DE2354BAED006A0C2F /* SceneDelegate.swift */,
+				7DEAA0E02354BAED006A0C2F /* ContentView.swift */,
+				7DEAA0E22354BAF0006A0C2F /* Assets.xcassets */,
+				7DEAA0E72354BAF0006A0C2F /* LaunchScreen.storyboard */,
+				7DEAA0EA2354BAF0006A0C2F /* Info.plist */,
+				7DEAA0E42354BAF0006A0C2F /* Preview Content */,
+			);
+			path = "BringMyOwnBeer🍺+Combine";
+			sourceTree = "<group>";
+		};
+		7DEAA0E42354BAF0006A0C2F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7DEAA0E52354BAF0006A0C2F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7DEAA0F22354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DEAA0F32354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift */,
+				7DEAA0F52354BAF0006A0C2F /* Info.plist */,
+			);
+			path = "BringMyOwnBeer🍺+CombineTests";
+			sourceTree = "<group>";
+		};
+		7DEAA0FD2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7DEAA0FE2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift */,
+				7DEAA1002354BAF0006A0C2F /* Info.plist */,
+			);
+			path = "BringMyOwnBeer🍺+CombineUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DEAA0D82354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEAA1032354BAF0006A0C2F /* Build configuration list for PBXNativeTarget "BringMyOwnBeer🍺+Combine" */;
+			buildPhases = (
+				7DEAA0D52354BAED006A0C2F /* Sources */,
+				7DEAA0D62354BAED006A0C2F /* Frameworks */,
+				7DEAA0D72354BAED006A0C2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BringMyOwnBeer🍺+Combine";
+			productName = "BringMyOwnBeer🍺+Combine";
+			productReference = 7DEAA0D92354BAED006A0C2F /* BringMyOwnBeer🍺+Combine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DEAA0EE2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEAA1062354BAF0006A0C2F /* Build configuration list for PBXNativeTarget "BringMyOwnBeer🍺+CombineTests" */;
+			buildPhases = (
+				7DEAA0EB2354BAF0006A0C2F /* Sources */,
+				7DEAA0EC2354BAF0006A0C2F /* Frameworks */,
+				7DEAA0ED2354BAF0006A0C2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DEAA0F12354BAF0006A0C2F /* PBXTargetDependency */,
+			);
+			name = "BringMyOwnBeer🍺+CombineTests";
+			productName = "BringMyOwnBeer🍺+CombineTests";
+			productReference = 7DEAA0EF2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DEAA0F92354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEAA1092354BAF0006A0C2F /* Build configuration list for PBXNativeTarget "BringMyOwnBeer🍺+CombineUITests" */;
+			buildPhases = (
+				7DEAA0F62354BAF0006A0C2F /* Sources */,
+				7DEAA0F72354BAF0006A0C2F /* Frameworks */,
+				7DEAA0F82354BAF0006A0C2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DEAA0FC2354BAF0006A0C2F /* PBXTargetDependency */,
+			);
+			name = "BringMyOwnBeer🍺+CombineUITests";
+			productName = "BringMyOwnBeer🍺+CombineUITests";
+			productReference = 7DEAA0FA2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DEAA0D12354BAED006A0C2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Boyoung Park";
+				TargetAttributes = {
+					7DEAA0D82354BAED006A0C2F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					7DEAA0EE2354BAF0006A0C2F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 7DEAA0D82354BAED006A0C2F;
+					};
+					7DEAA0F92354BAF0006A0C2F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 7DEAA0D82354BAED006A0C2F;
+					};
+				};
+			};
+			buildConfigurationList = 7DEAA0D42354BAED006A0C2F /* Build configuration list for PBXProject "BringMyOwnBeer🍺+Combine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DEAA0D02354BAED006A0C2F;
+			productRefGroup = 7DEAA0DA2354BAED006A0C2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DEAA0D82354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */,
+				7DEAA0EE2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests */,
+				7DEAA0F92354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DEAA0D72354BAED006A0C2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEAA0E92354BAF0006A0C2F /* LaunchScreen.storyboard in Resources */,
+				7DEAA0E62354BAF0006A0C2F /* Preview Assets.xcassets in Resources */,
+				7DEAA0E32354BAF0006A0C2F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEAA0ED2354BAF0006A0C2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEAA0F82354BAF0006A0C2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DEAA0D52354BAED006A0C2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEAA0DD2354BAED006A0C2F /* AppDelegate.swift in Sources */,
+				7DEAA0DF2354BAED006A0C2F /* SceneDelegate.swift in Sources */,
+				7DEAA0E12354BAED006A0C2F /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEAA0EB2354BAF0006A0C2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEAA0F42354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEAA0F62354BAF0006A0C2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEAA0FF2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DEAA0F12354BAF0006A0C2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DEAA0D82354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */;
+			targetProxy = 7DEAA0F02354BAF0006A0C2F /* PBXContainerItemProxy */;
+		};
+		7DEAA0FC2354BAF0006A0C2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DEAA0D82354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */;
+			targetProxy = 7DEAA0FB2354BAF0006A0C2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DEAA0E72354BAF0006A0C2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DEAA0E82354BAF0006A0C2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DEAA1012354BAF0006A0C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DEAA1022354BAF0006A0C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DEAA1042354BAF0006A0C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BringMyOwnBeer🍺+Combine/Preview Content\"";
+				DEVELOPMENT_TEAM = 4U9BR6CX43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BringMyOwnBeer🍺+Combine/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---Combine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DEAA1052354BAF0006A0C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BringMyOwnBeer🍺+Combine/Preview Content\"";
+				DEVELOPMENT_TEAM = 4U9BR6CX43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BringMyOwnBeer🍺+Combine/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---Combine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7DEAA1072354BAF0006A0C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U9BR6CX43;
+				INFOPLIST_FILE = "BringMyOwnBeer🍺+CombineTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BringMyOwnBeer🍺+Combine.app/BringMyOwnBeer🍺+Combine";
+			};
+			name = Debug;
+		};
+		7DEAA1082354BAF0006A0C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U9BR6CX43;
+				INFOPLIST_FILE = "BringMyOwnBeer🍺+CombineTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BringMyOwnBeer🍺+Combine.app/BringMyOwnBeer🍺+Combine";
+			};
+			name = Release;
+		};
+		7DEAA10A2354BAF0006A0C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U9BR6CX43;
+				INFOPLIST_FILE = "BringMyOwnBeer🍺+CombineUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BringMyOwnBeer🍺+Combine";
+			};
+			name = Debug;
+		};
+		7DEAA10B2354BAF0006A0C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U9BR6CX43;
+				INFOPLIST_FILE = "BringMyOwnBeer🍺+CombineUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BringMyOwnBeer🍺+Combine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DEAA0D42354BAED006A0C2F /* Build configuration list for PBXProject "BringMyOwnBeer🍺+Combine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEAA1012354BAF0006A0C2F /* Debug */,
+				7DEAA1022354BAF0006A0C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DEAA1032354BAF0006A0C2F /* Build configuration list for PBXNativeTarget "BringMyOwnBeer🍺+Combine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEAA1042354BAF0006A0C2F /* Debug */,
+				7DEAA1052354BAF0006A0C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DEAA1062354BAF0006A0C2F /* Build configuration list for PBXNativeTarget "BringMyOwnBeer🍺+CombineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEAA1072354BAF0006A0C2F /* Debug */,
+				7DEAA1082354BAF0006A0C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DEAA1092354BAF0006A0C2F /* Build configuration list for PBXNativeTarget "BringMyOwnBeer🍺+CombineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEAA10A2354BAF0006A0C2F /* Debug */,
+				7DEAA10B2354BAF0006A0C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DEAA0D12354BAED006A0C2F /* Project object */;
+}

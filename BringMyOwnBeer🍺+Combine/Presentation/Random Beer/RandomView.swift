@@ -22,11 +22,12 @@ struct RandomView: View {
                 Spacer()
                 Button(action: { self.viewModel.getRandomBeer() }) {
                     Text("I'm feeling lucky")
+                        .frame(maxWidth: .infinity, maxHeight: 56)
                         .foregroundColor(.white)
-                        .padding()
                         .background(Color.blue)
                         .cornerRadius(4)
                 }
+                .padding([.leading, .trailing], 10)
             }
             .navigationBarTitle("아무거나 검색")
             .padding()

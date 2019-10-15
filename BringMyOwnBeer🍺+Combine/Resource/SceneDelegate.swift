@@ -17,11 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene else { return }
 
         let punkService = PuckServiceImpl()
+        
         let beerListViewModel = BeerListViewModel(punkService: punkService)
         let searchViewModel = SearchViewModel(punkService: punkService)
+        let randomViewModel = RandomViewModel(punkService: punkService)
+        
         let mainView = MainView(
             beerListViewModel: beerListViewModel,
-            searchViewModel: searchViewModel
+            searchViewModel: searchViewModel,
+            randomViewModel: randomViewModel
         )
 
         // Use a UIHostingController as window root view controller

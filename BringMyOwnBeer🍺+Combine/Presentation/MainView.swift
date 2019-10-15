@@ -12,13 +12,16 @@ import Combine
 struct MainView: View {
     @ObservedObject var beerListViewModel: BeerListViewModel
     @ObservedObject var searchViewModel: SearchViewModel
+    @ObservedObject var randomViewModel: RandomViewModel
     
     init(
         beerListViewModel: BeerListViewModel,
-        searchViewModel: SearchViewModel
+        searchViewModel: SearchViewModel,
+        randomViewModel: RandomViewModel
     ) {
         self.beerListViewModel = beerListViewModel
         self.searchViewModel = searchViewModel
+        self.randomViewModel = randomViewModel
     }
     
     var body: some View {
@@ -27,6 +30,8 @@ struct MainView: View {
                 .tabItem { Text("맥주리스트") }
             SearchView(viewModel: searchViewModel)
                 .tabItem { Text("ID검색") }
+            RandomView(viewModel: randomViewModel)
+                .tabItem { Text("아무거나 검색") }
         }
     }
 }

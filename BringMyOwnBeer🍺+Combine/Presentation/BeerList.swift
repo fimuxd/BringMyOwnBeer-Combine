@@ -20,7 +20,7 @@ struct BeerList: View {
             List(viewModel.beers) { beer in
                 BeerRow(beer: beer)
             }
+            .navigationBarTitle(Text("맥주리스트"))
         }
-        .navigationBarTitle("맥주리스트")
     }
 }

@@ -27,6 +27,12 @@ struct SearchView: View {
             .navigationBarTitle("ID 검색")
             .padding()
         }
+        .onTapGesture {
+            UIApplication.shared.sendAction(
+                #selector(UIResponder.resignFirstResponder),
+                to:nil, from:nil, for:nil
+            )
+        }
     }
 }
 

@@ -1,5 +1,5 @@
 //
-//  SearchResultView.swift
+//  BeerResultView.swift
 //  BringMyOwnBeer🍺+Combine
 //
 //  Created by Bo-Young PARK on 2019/10/15.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SearchResultView: View {
+struct BeerResultView: View {
     var beer: Beer
     @ObservedObject var imageURL: ImageURL
     

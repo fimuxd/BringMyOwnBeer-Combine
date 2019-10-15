@@ -18,7 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let punkService = PuckServiceImpl()
         let beerListViewModel = BeerListViewModel(punkService: punkService)
-        let mainView = MainView(beerListViewModel: beerListViewModel)
+        let searchViewModel = SearchViewModel(punkService: punkService)
+        let mainView = MainView(
+            beerListViewModel: beerListViewModel,
+            searchViewModel: searchViewModel
+        )
 
         // Use a UIHostingController as window root view controller
         let window = UIWindow(windowScene: windowScene)

@@ -18,6 +18,7 @@ struct RandomView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .center) {
+                Spacer()
                 content()
                 Spacer()
                 Button(action: { self.viewModel.getRandomBeer() }) {

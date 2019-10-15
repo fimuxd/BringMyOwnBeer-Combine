@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DA4775423558E16004AD2FD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA4775323558E16004AD2FD /* MainView.swift */; };
 		7DEAA0DD2354BAED006A0C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0DC2354BAED006A0C2F /* AppDelegate.swift */; };
 		7DEAA0DF2354BAED006A0C2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0DE2354BAED006A0C2F /* SceneDelegate.swift */; };
 		7DEAA0E32354BAF0006A0C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEAA0E22354BAF0006A0C2F /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DA4775323558E16004AD2FD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7DEAA0D92354BAED006A0C2F /* BringMyOwnBeer🍺+Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BringMyOwnBeer🍺+Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEAA0DC2354BAED006A0C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DEAA0DE2354BAED006A0C2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,9 +109,8 @@
 		7DA4775023557DB5004AD2FD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				7DEAA10E2354BB5E006A0C2F /* BeerList.swift */,
-				7DEAA1102354BB70006A0C2F /* BeerListViewModel.swift */,
-				7DEAA1122354BB97006A0C2F /* BeerRow.swift */,
+				7DA4775323558E16004AD2FD /* MainView.swift */,
+				7DA4775223558DFC004AD2FD /* Beer List */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -120,6 +121,16 @@
 				7DEAA10C2354BB3A006A0C2F /* PunkNetwork.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		7DA4775223558DFC004AD2FD /* Beer List */ = {
+			isa = PBXGroup;
+			children = (
+				7DEAA10E2354BB5E006A0C2F /* BeerList.swift */,
+				7DEAA1102354BB70006A0C2F /* BeerListViewModel.swift */,
+				7DEAA1122354BB97006A0C2F /* BeerRow.swift */,
+			);
+			path = "Beer List";
 			sourceTree = "<group>";
 		};
 		7DEAA0D02354BAED006A0C2F = {
@@ -312,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DEAA1132354BB97006A0C2F /* BeerRow.swift in Sources */,
+				7DA4775423558E16004AD2FD /* MainView.swift in Sources */,
 				7DEAA10D2354BB3A006A0C2F /* PunkNetwork.swift in Sources */,
 				7DEAA10F2354BB5E006A0C2F /* BeerList.swift in Sources */,
 				7DEAA1112354BB70006A0C2F /* BeerListViewModel.swift in Sources */,

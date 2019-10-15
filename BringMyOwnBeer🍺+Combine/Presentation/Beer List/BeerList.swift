@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct BeerList: View {
     @ObservedObject var viewModel: BeerListViewModel

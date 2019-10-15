@@ -18,7 +18,6 @@ struct BeerRow: View {
         self.imageLoader = ImageLoader(loadable: URL(string: beer.imageURL ?? "")!)
     }
     
-    
     var body: some View {
         VStack {
             HStack {

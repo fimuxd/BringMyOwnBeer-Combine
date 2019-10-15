@@ -30,15 +30,15 @@ func decode<T: Decodable>(_ data: Data) -> AnyPublisher<T, PunkNetworkError> {
     return Just(data)
         .decode(type: T.self, decoder: decoder)
         .mapError { error in
-            .defaultError
+            .error("JSON parsing 에러")
         }
         .eraseToAnyPublisher()
 }
 
 protocol PunkService {
     func getBeers() -> AnyPublisher<[Beer], PunkNetworkError>
-    func getBeer(id: String) -> AnyPublisher<Beer, PunkNetworkError>
-    func getRandomBeer() -> AnyPublisher<Beer, PunkNetworkError>
+    func getBeer(id: String) -> AnyPublisher<[Beer], PunkNetworkError>
+    func getRandomBeer() -> AnyPublisher<[Beer], PunkNetworkError>
 }
 
 class PuckServiceImpl: PunkService {
@@ -64,7 +64,7 @@ class PuckServiceImpl: PunkService {
             .eraseToAnyPublisher()
     }
     
-    func getBeer(id: String) -> AnyPublisher<Beer, PunkNetworkError> {
+    func getBeer(id: String) -> AnyPublisher<[Beer], PunkNetworkError> {
         guard let url = makeGetBeerComponents(id: id).url else {
             let error = PunkNetworkError.error("유효하지 않은 URL")
             return Fail(error: error).eraseToAnyPublisher()
@@ -80,7 +80,7 @@ class PuckServiceImpl: PunkService {
             .eraseToAnyPublisher()
     }
     
-    func getRandomBeer() -> AnyPublisher<Beer, PunkNetworkError> {
+    func getRandomBeer() -> AnyPublisher<[Beer], PunkNetworkError> {
         guard let url = makeGetRandomBeerComponents().url else {
             let error = PunkNetworkError.error("유효하지 않은 URL")
             return Fail(error: error).eraseToAnyPublisher()

@@ -11,17 +11,22 @@ import Combine
 
 struct MainView: View {
     @ObservedObject var beerListViewModel: BeerListViewModel
+    @ObservedObject var searchViewModel: SearchViewModel
     
-    init(beerListViewModel: BeerListViewModel) {
+    init(
+        beerListViewModel: BeerListViewModel,
+        searchViewModel: SearchViewModel
+    ) {
         self.beerListViewModel = beerListViewModel
+        self.searchViewModel = searchViewModel
     }
     
     var body: some View {
         TabView {
             BeerList(viewModel: beerListViewModel)
-                .tabItem {
-                    Text("맥주리스트")
-            }
+                .tabItem { Text("맥주리스트") }
+            SearchView(viewModel: searchViewModel)
+                .tabItem { Text("ID검색") }
         }
     }
 }

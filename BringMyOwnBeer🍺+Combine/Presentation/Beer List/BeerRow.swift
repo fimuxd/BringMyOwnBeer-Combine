@@ -11,18 +11,18 @@ import Combine
 
 struct BeerRow: View {
     var beer: Beer
-    @ObservedObject var imageURL: ImageURL
+    @ObservedObject var imageLoader: ImageLoader
     
     init(beer: Beer) {
         self.beer = beer
-        self.imageURL = ImageURL(imageURL: beer.imageURL)
+        self.imageLoader = ImageLoader(loadable: URL(string: beer.imageURL ?? "")!)
     }
     
     
     var body: some View {
         VStack {
             HStack {
-                Image(uiImage: imageURL.data.isEmpty ? UIImage() : UIImage(data: imageURL.data)!)
+                Image(uiImage: imageLoader.image ?? UIImage())
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 120.0, height: 120.0, alignment: .center)
@@ -41,31 +41,5 @@ struct BeerRow: View {
                 }
             }
         }
-    }
-}
-
-class ImageURL: ObservableObject {
-    var didChange = PassthroughSubject<Data, Never>()
-    
-    var data = Data() {
-        didSet {
-            didChange.send(data)
-        }
-    }
-    
-    init(imageURL: String?) {
-        guard let url = URL(string: imageURL ?? "") else {
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data else {
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.data = data
-            }
-        }.resume()
     }
 }

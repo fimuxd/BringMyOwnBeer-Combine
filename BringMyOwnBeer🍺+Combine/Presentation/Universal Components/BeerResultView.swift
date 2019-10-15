@@ -10,16 +10,16 @@ import SwiftUI
 
 struct BeerResultView: View {
     var beer: Beer
-    @ObservedObject var imageURL: ImageURL
+    @ObservedObject var imageLoader: ImageLoader
     
     init(beer: Beer) {
         self.beer = beer
-        self.imageURL = ImageURL(imageURL: beer.imageURL)
+        self.imageLoader = ImageLoader(loadable: URL(string: beer.imageURL ?? "") ?? UIImage())
     }
     
     var body: some View {
         VStack(alignment: .center) {
-            Image(uiImage: imageURL.data.isEmpty ? UIImage() : UIImage(data: imageURL.data)!)
+            Image(uiImage: imageLoader.image ?? UIImage())
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 240.0, height: 240.0, alignment: .center)

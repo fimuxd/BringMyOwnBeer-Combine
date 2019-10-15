@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7DA4775423558E16004AD2FD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA4775323558E16004AD2FD /* MainView.swift */; };
+		7DA4775623559695004AD2FD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA4775523559695004AD2FD /* SearchView.swift */; };
+		7DA47758235596A0004AD2FD /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA47757235596A0004AD2FD /* SearchViewModel.swift */; };
+		7DA4775B2355A4D4004AD2FD /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA4775A2355A4D4004AD2FD /* SearchBar.swift */; };
+		7DA4775F2355A931004AD2FD /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA4775E2355A931004AD2FD /* SearchResultView.swift */; };
 		7DEAA0DD2354BAED006A0C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0DC2354BAED006A0C2F /* AppDelegate.swift */; };
 		7DEAA0DF2354BAED006A0C2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0DE2354BAED006A0C2F /* SceneDelegate.swift */; };
 		7DEAA0E32354BAF0006A0C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEAA0E22354BAF0006A0C2F /* Assets.xcassets */; };
@@ -41,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		7DA4775323558E16004AD2FD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7DA4775523559695004AD2FD /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		7DA47757235596A0004AD2FD /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		7DA4775A2355A4D4004AD2FD /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		7DA4775E2355A931004AD2FD /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
 		7DEAA0D92354BAED006A0C2F /* BringMyOwnBeer🍺+Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BringMyOwnBeer🍺+Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEAA0DC2354BAED006A0C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DEAA0DE2354BAED006A0C2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +119,7 @@
 			children = (
 				7DA4775323558E16004AD2FD /* MainView.swift */,
 				7DA4775223558DFC004AD2FD /* Beer List */,
+				7DA47759235596B6004AD2FD /* Search Beer */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -131,6 +140,17 @@
 				7DEAA1122354BB97006A0C2F /* BeerRow.swift */,
 			);
 			path = "Beer List";
+			sourceTree = "<group>";
+		};
+		7DA47759235596B6004AD2FD /* Search Beer */ = {
+			isa = PBXGroup;
+			children = (
+				7DA4775523559695004AD2FD /* SearchView.swift */,
+				7DA47757235596A0004AD2FD /* SearchViewModel.swift */,
+				7DA4775A2355A4D4004AD2FD /* SearchBar.swift */,
+				7DA4775E2355A931004AD2FD /* SearchResultView.swift */,
+			);
+			path = "Search Beer";
 			sourceTree = "<group>";
 		};
 		7DEAA0D02354BAED006A0C2F = {
@@ -323,12 +343,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DEAA1132354BB97006A0C2F /* BeerRow.swift in Sources */,
+				7DA4775F2355A931004AD2FD /* SearchResultView.swift in Sources */,
+				7DA4775623559695004AD2FD /* SearchView.swift in Sources */,
 				7DA4775423558E16004AD2FD /* MainView.swift in Sources */,
 				7DEAA10D2354BB3A006A0C2F /* PunkNetwork.swift in Sources */,
 				7DEAA10F2354BB5E006A0C2F /* BeerList.swift in Sources */,
 				7DEAA1112354BB70006A0C2F /* BeerListViewModel.swift in Sources */,
+				7DA47758235596A0004AD2FD /* SearchViewModel.swift in Sources */,
 				7DEAA0DD2354BAED006A0C2F /* AppDelegate.swift in Sources */,
 				7DEAA1152354BBBA006A0C2F /* Beer.swift in Sources */,
+				7DA4775B2355A4D4004AD2FD /* SearchBar.swift in Sources */,
 				7DEAA0DF2354BAED006A0C2F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

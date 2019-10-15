@@ -1,5 +1,5 @@
 //
-//  BeerList+SwiftUI.swift
+//  BeerList.swift
 //  BringMyOwnBeer🍺+Combine
 //
 //  Created by Bo-Young PARK on 2019/10/14.
@@ -9,9 +9,9 @@
 import SwiftUI
 
 struct BeerList: View {
-    @ObservedObject var viewModel: BeerListViewModelWithCombine
+    @ObservedObject var viewModel: BeerListViewModel
     
-    init(viewModel: BeerListViewModelWithCombine) {
+    init(viewModel: BeerListViewModel) {
         self.viewModel = viewModel
     }
     

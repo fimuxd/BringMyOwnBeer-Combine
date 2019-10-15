@@ -14,10 +14,10 @@
 		7DEAA0E92354BAF0006A0C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DEAA0E72354BAF0006A0C2F /* LaunchScreen.storyboard */; };
 		7DEAA0F42354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0F32354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift */; };
 		7DEAA0FF2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0FE2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift */; };
-		7DEAA10D2354BB3A006A0C2F /* PunkNetwork+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA10C2354BB3A006A0C2F /* PunkNetwork+Combine.swift */; };
-		7DEAA10F2354BB5E006A0C2F /* BeerList+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA10E2354BB5E006A0C2F /* BeerList+SwiftUI.swift */; };
-		7DEAA1112354BB70006A0C2F /* BeerListViewModel+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA1102354BB70006A0C2F /* BeerListViewModel+Combine.swift */; };
-		7DEAA1132354BB97006A0C2F /* BeerRow+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA1122354BB97006A0C2F /* BeerRow+SwiftUI.swift */; };
+		7DEAA10D2354BB3A006A0C2F /* PunkNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA10C2354BB3A006A0C2F /* PunkNetwork.swift */; };
+		7DEAA10F2354BB5E006A0C2F /* BeerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA10E2354BB5E006A0C2F /* BeerList.swift */; };
+		7DEAA1112354BB70006A0C2F /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA1102354BB70006A0C2F /* BeerListViewModel.swift */; };
+		7DEAA1132354BB97006A0C2F /* BeerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA1122354BB97006A0C2F /* BeerRow.swift */; };
 		7DEAA1152354BBBA006A0C2F /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA1142354BBBA006A0C2F /* Beer.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,10 +52,10 @@
 		7DEAA0FA2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BringMyOwnBeer🍺+CombineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEAA0FE2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BringMyOwnBeer___CombineUITests.swift"; sourceTree = "<group>"; };
 		7DEAA1002354BAF0006A0C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DEAA10C2354BB3A006A0C2F /* PunkNetwork+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PunkNetwork+Combine.swift"; sourceTree = "<group>"; };
-		7DEAA10E2354BB5E006A0C2F /* BeerList+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BeerList+SwiftUI.swift"; sourceTree = "<group>"; };
-		7DEAA1102354BB70006A0C2F /* BeerListViewModel+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BeerListViewModel+Combine.swift"; sourceTree = "<group>"; };
-		7DEAA1122354BB97006A0C2F /* BeerRow+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BeerRow+SwiftUI.swift"; sourceTree = "<group>"; };
+		7DEAA10C2354BB3A006A0C2F /* PunkNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkNetwork.swift; sourceTree = "<group>"; };
+		7DEAA10E2354BB5E006A0C2F /* BeerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerList.swift; sourceTree = "<group>"; };
+		7DEAA1102354BB70006A0C2F /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
+		7DEAA1122354BB97006A0C2F /* BeerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRow.swift; sourceTree = "<group>"; };
 		7DEAA1142354BBBA006A0C2F /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +84,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DA4774E23557D71004AD2FD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7DEAA0DC2354BAED006A0C2F /* AppDelegate.swift */,
+				7DEAA0DE2354BAED006A0C2F /* SceneDelegate.swift */,
+				7DEAA0E22354BAF0006A0C2F /* Assets.xcassets */,
+				7DEAA0E72354BAF0006A0C2F /* LaunchScreen.storyboard */,
+				7DEAA0EA2354BAF0006A0C2F /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7DA4774F23557D85004AD2FD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7DEAA1142354BBBA006A0C2F /* Beer.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7DA4775023557DB5004AD2FD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7DEAA10E2354BB5E006A0C2F /* BeerList.swift */,
+				7DEAA1102354BB70006A0C2F /* BeerListViewModel.swift */,
+				7DEAA1122354BB97006A0C2F /* BeerRow.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7DA4775123557DC9004AD2FD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7DEAA10C2354BB3A006A0C2F /* PunkNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		7DEAA0D02354BAED006A0C2F = {
 			isa = PBXGroup;
 			children = (
@@ -107,16 +145,10 @@
 		7DEAA0DB2354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */ = {
 			isa = PBXGroup;
 			children = (
-				7DEAA0DC2354BAED006A0C2F /* AppDelegate.swift */,
-				7DEAA0DE2354BAED006A0C2F /* SceneDelegate.swift */,
-				7DEAA10C2354BB3A006A0C2F /* PunkNetwork+Combine.swift */,
-				7DEAA10E2354BB5E006A0C2F /* BeerList+SwiftUI.swift */,
-				7DEAA1102354BB70006A0C2F /* BeerListViewModel+Combine.swift */,
-				7DEAA1122354BB97006A0C2F /* BeerRow+SwiftUI.swift */,
-				7DEAA1142354BBBA006A0C2F /* Beer.swift */,
-				7DEAA0E22354BAF0006A0C2F /* Assets.xcassets */,
-				7DEAA0E72354BAF0006A0C2F /* LaunchScreen.storyboard */,
-				7DEAA0EA2354BAF0006A0C2F /* Info.plist */,
+				7DA4774E23557D71004AD2FD /* Resource */,
+				7DA4774F23557D85004AD2FD /* Entity */,
+				7DA4775123557DC9004AD2FD /* Network */,
+				7DA4775023557DB5004AD2FD /* Presentation */,
 				7DEAA0E42354BAF0006A0C2F /* Preview Content */,
 			);
 			path = "BringMyOwnBeer🍺+Combine";
@@ -279,10 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DEAA1132354BB97006A0C2F /* BeerRow+SwiftUI.swift in Sources */,
-				7DEAA10D2354BB3A006A0C2F /* PunkNetwork+Combine.swift in Sources */,
-				7DEAA10F2354BB5E006A0C2F /* BeerList+SwiftUI.swift in Sources */,
-				7DEAA1112354BB70006A0C2F /* BeerListViewModel+Combine.swift in Sources */,
+				7DEAA1132354BB97006A0C2F /* BeerRow.swift in Sources */,
+				7DEAA10D2354BB3A006A0C2F /* PunkNetwork.swift in Sources */,
+				7DEAA10F2354BB5E006A0C2F /* BeerList.swift in Sources */,
+				7DEAA1112354BB70006A0C2F /* BeerListViewModel.swift in Sources */,
 				7DEAA0DD2354BAED006A0C2F /* AppDelegate.swift in Sources */,
 				7DEAA1152354BBBA006A0C2F /* Beer.swift in Sources */,
 				7DEAA0DF2354BAED006A0C2F /* SceneDelegate.swift in Sources */,
@@ -454,7 +486,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BringMyOwnBeer🍺+Combine/Preview Content\"";
 				DEVELOPMENT_TEAM = 4U9BR6CX43;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "BringMyOwnBeer🍺+Combine/Info.plist";
+				INFOPLIST_FILE = "/Users/boyoung/BringMyOwnBeer-Combine/BringMyOwnBeer🍺+Combine/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---Combine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,7 +506,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BringMyOwnBeer🍺+Combine/Preview Content\"";
 				DEVELOPMENT_TEAM = 4U9BR6CX43;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "BringMyOwnBeer🍺+Combine/Info.plist";
+				INFOPLIST_FILE = "/Users/boyoung/BringMyOwnBeer-Combine/BringMyOwnBeer🍺+Combine/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---Combine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -503,7 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BringMyOwnBeer🍺+Combine.app/BringMyOwnBeer🍺+Combine";
 			};
 			name = Debug;
@@ -525,7 +557,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BringMyOwnBeer🍺+Combine.app/BringMyOwnBeer🍺+Combine";
 			};
 			name = Release;
@@ -545,7 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = "BringMyOwnBeer🍺+Combine";
 			};
 			name = Debug;
@@ -565,7 +597,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = "BringMyOwnBeer🍺+Combine";
 			};
 			name = Release;

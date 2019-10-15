@@ -1,5 +1,5 @@
 //
-//  BeerListViewModel+Combine.swift
+//  BeerListViewModel.swift
 //  BringMyOwnBeer🍺+Combine
 //
 //  Created by Bo-Young PARK on 2019/10/14.
@@ -9,7 +9,7 @@
 import SwiftUI
 import Combine
 
-class BeerListViewModelWithCombine: ObservableObject {
+class BeerListViewModel: ObservableObject {
     @Published var beers: [Beer] = []
     
     private let punkService: PunkService

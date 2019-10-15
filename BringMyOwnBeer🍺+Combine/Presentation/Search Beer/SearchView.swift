@@ -25,6 +25,7 @@ struct SearchView: View {
                 Spacer()
             }
             .navigationBarTitle("ID 검색")
+            .padding()
         }
     }
 }
@@ -39,7 +40,7 @@ private extension SearchView {
     }
     
     func details(for beer: Beer) -> some View {
-        SearchResultView(beer: beer)
+        BeerResultView(beer: beer)
     }
     
     var loading: some View {

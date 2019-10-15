@@ -27,11 +27,20 @@ struct MainView: View {
     var body: some View {
         TabView {
             BeerList(viewModel: beerListViewModel)
-                .tabItem { Text("맥주리스트") }
+                .tabItem {
+                    Image(uiImage: #imageLiteral(resourceName: "iconBeerList"))
+                    Text("맥주리스트")
+                }
             SearchView(viewModel: searchViewModel)
-                .tabItem { Text("ID검색") }
+                .tabItem {
+                    Image(uiImage: #imageLiteral(resourceName: "iconSearchID"))
+                    Text("ID 검색")
+                }
             RandomView(viewModel: randomViewModel)
-                .tabItem { Text("아무거나 검색") }
+                .tabItem {
+                    Image(uiImage: #imageLiteral(resourceName: "iconRandom"))
+                    Text("아무거나 검색")
+                }
         }
     }
 }

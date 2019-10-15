@@ -3,6 +3,7 @@
 
 ## Contents
 - Abount BringMyOwnBeer🍺+Combine (feat. SwiftUI)
+- Requirements
 - Concept
 - Contact me
 
@@ -15,6 +16,11 @@
 - 사이트: [스위프트 컨퍼런스](http://letswift.kr/2019/)
 - 주제: RxSwift to Combine (feat. SwiftUI)
 - 일시: 2019년 11월 12일 10:00 - 10:40  
+
+## Requirements
+- iOS 13.0
+- Swift 5.0
+- Xcode 11.0 (covered up with 11.1)
 
 ## Concept
 - BrewDog 사의 [PunkAPI](https://punkapi.com/documentation/v2)를 이용하여 맥주 리스트와 검색 등을 제공한다. 오직 Combine과 SwiftUI만으로.

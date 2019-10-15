@@ -31,6 +31,7 @@ struct SearchBar: UIViewRepresentable {
         let searchBar = UISearchBar(frame: .zero)
         searchBar.delegate = context.coordinator
         searchBar.autocapitalizationType = .none
+        searchBar.keyboardType = .numberPad
         return searchBar
     }
     

@@ -29,7 +29,6 @@ class SearchViewModel: ObservableObject {
     
     func getBeer(id: String) {
         punkService.getBeer(id: id)
-            .print("xxx0")
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { [weak self] value in

@@ -25,3 +25,16 @@ struct BeerList: View {
         }
     }
 }
+
+struct BeerList_Previews: PreviewProvider {
+    static var previews: some View {
+        let dummyService = PunkNetworkDummy()
+        let beerListViewModel = BeerListViewModel(punkService: dummyService)
+        
+        return ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
+            BeerList(viewModel: beerListViewModel)
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
+    }
+}

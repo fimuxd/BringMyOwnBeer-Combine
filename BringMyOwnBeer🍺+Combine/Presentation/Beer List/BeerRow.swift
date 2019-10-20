@@ -42,3 +42,14 @@ struct BeerRow: View {
         }
     }
 }
+
+struct BeerRow_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            BeerRow(beer: beersData[0])
+            BeerRow(beer: beersData[10])
+            BeerRow(beer: beersData[20])
+        }
+        .previewLayout(.fixed(width: 450, height: 150))
+    }
+}

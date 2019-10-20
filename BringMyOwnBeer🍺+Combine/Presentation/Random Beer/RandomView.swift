@@ -54,3 +54,15 @@ private extension RandomView {
     }
 }
 
+struct RandomView_Previews: PreviewProvider {
+    static var previews: some View {
+        let dummyService = PunkNetworkDummy()
+        let randomViewModel = RandomViewModel(punkService: dummyService)
+        
+        return ForEach(["iPhone 8", "iPhone 8 Plus"], id: \.self) { deviceName in
+            RandomView(viewModel: randomViewModel)
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
+    }
+}

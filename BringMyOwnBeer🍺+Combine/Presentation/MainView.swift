@@ -44,3 +44,14 @@ struct MainView: View {
         }
     }
 }
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        let dummyService = PunkNetworkDummy()
+        let beerListViewModel = BeerListViewModel(punkService: dummyService)
+        let searchViewModel = SearchViewModel(punkService: dummyService)
+        let randomViewModel = RandomViewModel(punkService: dummyService)
+        
+        return MainView(beerListViewModel: beerListViewModel, searchViewModel: searchViewModel, randomViewModel: randomViewModel)
+    }
+}

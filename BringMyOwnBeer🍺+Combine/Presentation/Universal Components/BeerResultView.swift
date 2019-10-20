@@ -36,3 +36,13 @@ struct BeerResultView: View {
         }
     }
 }
+
+struct BeerResultView_Previews: PreviewProvider {
+    static var previews: some View {
+        return ForEach(["iPhone SE", "iPhone 6s Plus", "iPhone 7", "iPhone 7 Plus", "iPhone 8", "iPhone 8 Plus", "iPhone X", "iPnone XR", "iPhone XS", "iPhone XS Max"], id: \.self) { deviceName in
+            BeerResultView(beer: beersData[18])
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
+    }
+}

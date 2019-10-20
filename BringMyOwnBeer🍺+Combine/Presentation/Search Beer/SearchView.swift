@@ -54,3 +54,16 @@ private extension SearchView {
             .foregroundColor(.gray)
     }
 }
+
+struct SearchView_Previews: PreviewProvider {
+    static var previews: some View {
+        let dummyService = PunkNetworkDummy()
+        let searchViewModel = SearchViewModel(punkService: dummyService)
+        
+        return ForEach(["iPhone SE", "iPhone X"], id: \.self) { deviceName in
+            SearchView(viewModel: searchViewModel)
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
+    }
+}

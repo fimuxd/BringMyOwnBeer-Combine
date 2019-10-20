@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
 
-        let punkService = PuckServiceImpl()
+        let punkService = PunkNetworkImpl()
         
         let beerListViewModel = BeerListViewModel(punkService: punkService)
         let searchViewModel = SearchViewModel(punkService: punkService)

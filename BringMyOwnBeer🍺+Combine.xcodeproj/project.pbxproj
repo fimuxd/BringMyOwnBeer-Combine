@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2375E2235C2A0A005CB267 /* BeersData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D2375E1235C2A0A005CB267 /* BeersData.json */; };
+		7D2375E4235C2ACE005CB267 /* PunkNetworkImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2375E3235C2ACE005CB267 /* PunkNetworkImpl.swift */; };
+		7D2375E6235C2C2F005CB267 /* PunkNetworkDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2375E5235C2C2F005CB267 /* PunkNetworkDummy.swift */; };
 		7D9DEF8B2355B22400D5E1BE /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DEF8A2355B22400D5E1BE /* RandomView.swift */; };
 		7D9DEF8D2355B22B00D5E1BE /* RandomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DEF8C2355B22B00D5E1BE /* RandomViewModel.swift */; };
 		7D9DEF912355D22800D5E1BE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DEF902355D22800D5E1BE /* ImageLoader.swift */; };
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D2375E1235C2A0A005CB267 /* BeersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BeersData.json; sourceTree = "<group>"; };
+		7D2375E3235C2ACE005CB267 /* PunkNetworkImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkNetworkImpl.swift; sourceTree = "<group>"; };
+		7D2375E5235C2C2F005CB267 /* PunkNetworkDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkNetworkDummy.swift; sourceTree = "<group>"; };
 		7D9DEF8A2355B22400D5E1BE /* RandomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomView.swift; sourceTree = "<group>"; };
 		7D9DEF8C2355B22B00D5E1BE /* RandomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewModel.swift; sourceTree = "<group>"; };
 		7D9DEF902355D22800D5E1BE /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 			children = (
 				7DA4775E2355A931004AD2FD /* BeerResultView.swift */,
 				7D9DEF902355D22800D5E1BE /* ImageLoader.swift */,
+				7D2375E1235C2A0A005CB267 /* BeersData.json */,
 			);
 			path = "Universal Components";
 			sourceTree = "<group>";
@@ -153,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				7DEAA10C2354BB3A006A0C2F /* PunkNetwork.swift */,
+				7D2375E3235C2ACE005CB267 /* PunkNetworkImpl.swift */,
+				7D2375E5235C2C2F005CB267 /* PunkNetworkDummy.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -343,6 +352,7 @@
 				7DEAA0E92354BAF0006A0C2F /* LaunchScreen.storyboard in Resources */,
 				7DEAA0E62354BAF0006A0C2F /* Preview Assets.xcassets in Resources */,
 				7DEAA0E32354BAF0006A0C2F /* Assets.xcassets in Resources */,
+				7D2375E2235C2A0A005CB267 /* BeersData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DEAA1132354BB97006A0C2F /* BeerRow.swift in Sources */,
+				7D2375E6235C2C2F005CB267 /* PunkNetworkDummy.swift in Sources */,
+				7D2375E4235C2ACE005CB267 /* PunkNetworkImpl.swift in Sources */,
 				7D9DEF8D2355B22B00D5E1BE /* RandomViewModel.swift in Sources */,
 				7D9DEF912355D22800D5E1BE /* ImageLoader.swift in Sources */,
 				7DA4775F2355A931004AD2FD /* BeerResultView.swift in Sources */,

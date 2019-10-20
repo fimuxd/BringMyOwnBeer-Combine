@@ -26,7 +26,7 @@
 - BrewDog 사의 [PunkAPI](https://punkapi.com/documentation/v2)를 이용하여 맥주 리스트와 검색 등을 제공한다. 오직 Combine과 SwiftUI만으로!
 - Combine + SwiftUI를 MVVM 패턴으로 구현합니다. 
 - 기존 [BringMyOwnBeer🍺](https://github.com/fimuxd/BringMyOwnBeer-) 앱과 성능 차이를 알아봅니다.
-(WIP)
+
 | 리스트 | 검색 | 랜덤 |
 |:---:|:---:|:---:|
 |<img src = "https://github.com/fimuxd/BringMyOwnBeer-Combine/blob/develop/ScreenShots/BeerList.png" width = 400> | <img src = "https://github.com/fimuxd/BringMyOwnBeer-Combine/blob/develop/ScreenShots/Random.png" width = 400>| <img src = "https://github.com/fimuxd/BringMyOwnBeer-Combine/blob/develop/ScreenShots/Search.png" width = 400>|

@@ -12,20 +12,20 @@ import SwiftUI
 class BeerListViewModel: ObservableObject {
     @Published var beers: [Beer] = []
     
-    private let punkService: PunkService
+    private let punkNetwork: PunkNetwork
     private var disposables = Set<AnyCancellable>()
     
     init(
-        punkService: PunkService,
+        punkService: PunkNetwork,
         scheduler: DispatchQueue = DispatchQueue(label: "BeerListViewModel")
     ) {
-        self.punkService = punkService
+        self.punkNetwork = punkService
         _ = Just(Void())
             .sink(receiveValue: getBeers)
     }
     
     func getBeers() {
-        punkService.getBeers()
+        punkNetwork.getBeers()
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { [weak self] value in

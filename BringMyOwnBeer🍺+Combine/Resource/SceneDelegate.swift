@@ -16,11 +16,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
 
-        let punkService = PunkNetworkImpl()
+        let punkNetwork = PunkNetworkImpl()
         
-        let beerListViewModel = BeerListViewModel(punkService: punkService)
-        let searchViewModel = SearchViewModel(punkService: punkService)
-        let randomViewModel = RandomViewModel(punkService: punkService)
+        let beerListViewModel = BeerListViewModel(punkService: punkNetwork)
+        let searchViewModel = SearchViewModel(punkService: punkNetwork)
+        let randomViewModel = RandomViewModel(punkService: punkNetwork)
         
         let mainView = MainView(
             beerListViewModel: beerListViewModel,

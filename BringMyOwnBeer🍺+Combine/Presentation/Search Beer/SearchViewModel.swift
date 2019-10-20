@@ -13,14 +13,14 @@ class SearchViewModel: ObservableObject {
     @Published var beer: Beer? = nil
     @Published var id: String = ""
     
-    private let punkService: PunkService
+    private let punkNetwork: PunkNetwork
     private var disposables = Set<AnyCancellable>()
     
     init(
-        punkService: PunkService,
+        punkService: PunkNetwork,
         scheduler: DispatchQueue = DispatchQueue(label: "SearchViewModel")
     ) {
-        self.punkService = punkService
+        self.punkNetwork = punkService
         _ = $id
             .dropFirst(1)
             .debounce(for: .seconds(0.5), scheduler: scheduler)
@@ -28,7 +28,7 @@ class SearchViewModel: ObservableObject {
     }
     
     func getBeer(id: String) {
-        punkService.getBeer(id: id)
+        punkNetwork.getBeer(id: id)
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { [weak self] value in

@@ -12,18 +12,18 @@ import SwiftUI
 class RandomViewModel: ObservableObject {
     @Published var beer: Beer? = nil
  
-    private let punkService: PunkService
+    private let punkNetwork: PunkNetwork
     private var disposables = Set<AnyCancellable>()
     
     init(
-        punkService: PunkService,
+        punkService: PunkNetwork,
         scheduler: DispatchQueue = DispatchQueue(label: "RandomViewModel")
     ) {
-        self.punkService = punkService
+        self.punkNetwork = punkService
     }
     
     func getRandomBeer() {
-        punkService.getRandomBeer()
+        punkNetwork.getRandomBeer()
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { [weak self] value in

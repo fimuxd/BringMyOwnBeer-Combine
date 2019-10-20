@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Combine
 
 struct Beer: Codable, Identifiable {
     let id: Int?

@@ -14,7 +14,7 @@ struct BeerResultView: View {
     
     init(beer: Beer) {
         self.beer = beer
-        self.imageLoader = ImageLoader(loadable: URL(string: beer.imageURL ?? "") ?? UIImage())
+        self.imageLoader = ImageLoader(loadable: URL(string: beer.imageURL ?? "") ?? UIImage(), id: beer.id ?? 0)
     }
     
     var body: some View {

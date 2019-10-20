@@ -10,7 +10,7 @@ import Combine
 import SwiftUI
 
 protocol ImageLoadable {
-    func loadImage() -> AnyPublisher<UIImage, Error>
+    func loadImage(id: Int) -> AnyPublisher<UIImage, Error>
 }
 
 extension URL: ImageLoadable {
@@ -18,8 +18,12 @@ extension URL: ImageLoadable {
         case incorrectData
     }
 
-    func loadImage() -> AnyPublisher<UIImage, Error> {
-        URLSession
+    func loadImage(id: Int) -> AnyPublisher<UIImage, Error> {
+        if let retrieveImage = self.retrieveImage(forKey: "\(id)") {
+            return retrieveImage.loadImage(id: id)
+        }
+        
+        return URLSession
             .shared
             .dataTaskPublisher(for: self)
             .tryMap { data, _ in
@@ -27,14 +31,29 @@ extension URL: ImageLoadable {
                     throw ImageLoadingError.incorrectData
                 }
                 
+                self.store(image: image, forKey: "\(id)")
                 return image
             }
             .eraseToAnyPublisher()
     }
+    
+    private func store(image: UIImage, forKey key: String) {
+        if let pngRepresentation = image.pngData() {
+            UserDefaults.standard.set(pngRepresentation, forKey: key)
+        }
+    }
+    
+    private func retrieveImage(forKey key: String) -> UIImage? {
+        guard let imageData = UserDefaults.standard.object(forKey: key) as? Data,
+            let image = UIImage(data: imageData) else {
+            return nil
+        }
+        return image
+    }
 }
 
 extension UIImage: ImageLoadable {
-    func loadImage() -> AnyPublisher<UIImage, Error> {
+    func loadImage(id: Int) -> AnyPublisher<UIImage, Error> {
         return Just(self)
             // Just's Failure type is Never
             // Our protocol expect's it to be Error, so we need to `override` it
@@ -53,21 +72,26 @@ final class ImageLoader: ObservableObject {
     
     static var loadCount = 0
     
-    init(loadable: ImageLoadable) {
+    init(loadable: ImageLoadable, id: Int) {
         self.loadable = loadable
 
-        self.objectWillChange = $image.handleEvents(receiveSubscription: { [weak self] sub in
-            self?.load()
-        }, receiveCancel: { [weak self] in
-            self?.cancellable?.cancel()
-        }).eraseToAnyPublisher()
+        self.objectWillChange = $image.handleEvents(
+            receiveSubscription: { [weak self] sub in
+                self?.load(id: id)
+            },
+            receiveCancel: { [weak self] in
+                self?.cancellable?.cancel()
+            }
+        ).eraseToAnyPublisher()
     }
     
-    private func load() {
-        guard image == nil else { return }
+    private func load(id: Int) {
+        guard image == nil else {
+            return
+        }
         
         cancellable = loadable
-            .loadImage()
+            .loadImage(id: id)
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { _ in },
@@ -82,19 +106,19 @@ final class ImageLoader: ObservableObject {
     }
 }
 
-struct ImageLoadingView: View {
-    @ObservedObject private var imageLoader: ImageLoader
-    
-    init(image: URL) {
-        imageLoader = ImageLoader(loadable: image)
-    }
-    
-    var body: some View {
-        return ZStack {
-            if imageLoader.image != nil {
-                Image(uiImage: imageLoader.image!)
-                    .resizable()
-            }
-        }
-    }
-}
+//struct ImageLoadingView: View {
+//    @ObservedObject private var imageLoader: ImageLoader
+//
+//    init(image: URL) {
+//        imageLoader = ImageLoader(loadable: image)
+//    }
+//
+//    var body: some View {
+//        return ZStack {
+//            if imageLoader.image != nil {
+//                Image(uiImage: imageLoader.image!)
+//                    .resizable()
+//            }
+//        }
+//    }
+//}

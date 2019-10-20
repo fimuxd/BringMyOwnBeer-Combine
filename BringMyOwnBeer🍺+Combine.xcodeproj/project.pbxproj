@@ -23,31 +23,12 @@
 		7DEAA0E32354BAF0006A0C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEAA0E22354BAF0006A0C2F /* Assets.xcassets */; };
 		7DEAA0E62354BAF0006A0C2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEAA0E52354BAF0006A0C2F /* Preview Assets.xcassets */; };
 		7DEAA0E92354BAF0006A0C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DEAA0E72354BAF0006A0C2F /* LaunchScreen.storyboard */; };
-		7DEAA0F42354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0F32354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift */; };
-		7DEAA0FF2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA0FE2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift */; };
 		7DEAA10D2354BB3A006A0C2F /* PunkNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA10C2354BB3A006A0C2F /* PunkNetwork.swift */; };
 		7DEAA10F2354BB5E006A0C2F /* BeerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA10E2354BB5E006A0C2F /* BeerList.swift */; };
 		7DEAA1112354BB70006A0C2F /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA1102354BB70006A0C2F /* BeerListViewModel.swift */; };
 		7DEAA1132354BB97006A0C2F /* BeerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA1122354BB97006A0C2F /* BeerRow.swift */; };
 		7DEAA1152354BBBA006A0C2F /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEAA1142354BBBA006A0C2F /* Beer.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7DEAA0F02354BAF0006A0C2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7DEAA0D12354BAED006A0C2F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7DEAA0D82354BAED006A0C2F;
-			remoteInfo = "BringMyOwnBeer🍺+Combine";
-		};
-		7DEAA0FB2354BAF0006A0C2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7DEAA0D12354BAED006A0C2F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7DEAA0D82354BAED006A0C2F;
-			remoteInfo = "BringMyOwnBeer🍺+Combine";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7D2375E1235C2A0A005CB267 /* BeersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BeersData.json; sourceTree = "<group>"; };
@@ -68,12 +49,6 @@
 		7DEAA0E52354BAF0006A0C2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7DEAA0E82354BAF0006A0C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DEAA0EA2354BAF0006A0C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DEAA0EF2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BringMyOwnBeer🍺+CombineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DEAA0F32354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BringMyOwnBeer___CombineTests.swift"; sourceTree = "<group>"; };
-		7DEAA0F52354BAF0006A0C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DEAA0FA2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BringMyOwnBeer🍺+CombineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DEAA0FE2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BringMyOwnBeer___CombineUITests.swift"; sourceTree = "<group>"; };
-		7DEAA1002354BAF0006A0C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DEAA10C2354BB3A006A0C2F /* PunkNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkNetwork.swift; sourceTree = "<group>"; };
 		7DEAA10E2354BB5E006A0C2F /* BeerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerList.swift; sourceTree = "<group>"; };
 		7DEAA1102354BB70006A0C2F /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
@@ -83,20 +58,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		7DEAA0D62354BAED006A0C2F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DEAA0EC2354BAF0006A0C2F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DEAA0F72354BAF0006A0C2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,8 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				7DEAA0DB2354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */,
-				7DEAA0F22354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests */,
-				7DEAA0FD2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests */,
 				7DEAA0DA2354BAED006A0C2F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -200,8 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				7DEAA0D92354BAED006A0C2F /* BringMyOwnBeer🍺+Combine.app */,
-				7DEAA0EF2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests.xctest */,
-				7DEAA0FA2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,24 +184,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7DEAA0F22354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests */ = {
-			isa = PBXGroup;
-			children = (
-				7DEAA0F32354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift */,
-				7DEAA0F52354BAF0006A0C2F /* Info.plist */,
-			);
-			path = "BringMyOwnBeer🍺+CombineTests";
-			sourceTree = "<group>";
-		};
-		7DEAA0FD2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7DEAA0FE2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift */,
-				7DEAA1002354BAF0006A0C2F /* Info.plist */,
-			);
-			path = "BringMyOwnBeer🍺+CombineUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,42 +204,6 @@
 			productReference = 7DEAA0D92354BAED006A0C2F /* BringMyOwnBeer🍺+Combine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7DEAA0EE2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7DEAA1062354BAF0006A0C2F /* Build configuration list for PBXNativeTarget "BringMyOwnBeer🍺+CombineTests" */;
-			buildPhases = (
-				7DEAA0EB2354BAF0006A0C2F /* Sources */,
-				7DEAA0EC2354BAF0006A0C2F /* Frameworks */,
-				7DEAA0ED2354BAF0006A0C2F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DEAA0F12354BAF0006A0C2F /* PBXTargetDependency */,
-			);
-			name = "BringMyOwnBeer🍺+CombineTests";
-			productName = "BringMyOwnBeer🍺+CombineTests";
-			productReference = 7DEAA0EF2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7DEAA0F92354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7DEAA1092354BAF0006A0C2F /* Build configuration list for PBXNativeTarget "BringMyOwnBeer🍺+CombineUITests" */;
-			buildPhases = (
-				7DEAA0F62354BAF0006A0C2F /* Sources */,
-				7DEAA0F72354BAF0006A0C2F /* Frameworks */,
-				7DEAA0F82354BAF0006A0C2F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DEAA0FC2354BAF0006A0C2F /* PBXTargetDependency */,
-			);
-			name = "BringMyOwnBeer🍺+CombineUITests";
-			productName = "BringMyOwnBeer🍺+CombineUITests";
-			productReference = 7DEAA0FA2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -313,14 +216,6 @@
 				TargetAttributes = {
 					7DEAA0D82354BAED006A0C2F = {
 						CreatedOnToolsVersion = 11.1;
-					};
-					7DEAA0EE2354BAF0006A0C2F = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 7DEAA0D82354BAED006A0C2F;
-					};
-					7DEAA0F92354BAF0006A0C2F = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 7DEAA0D82354BAED006A0C2F;
 					};
 				};
 			};
@@ -338,8 +233,6 @@
 			projectRoot = "";
 			targets = (
 				7DEAA0D82354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */,
-				7DEAA0EE2354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineTests */,
-				7DEAA0F92354BAF0006A0C2F /* BringMyOwnBeer🍺+CombineUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -353,20 +246,6 @@
 				7DEAA0E62354BAF0006A0C2F /* Preview Assets.xcassets in Resources */,
 				7DEAA0E32354BAF0006A0C2F /* Assets.xcassets in Resources */,
 				7D2375E2235C2A0A005CB267 /* BeersData.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DEAA0ED2354BAF0006A0C2F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DEAA0F82354BAF0006A0C2F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,36 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DEAA0EB2354BAF0006A0C2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DEAA0F42354BAF0006A0C2F /* BringMyOwnBeer___CombineTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DEAA0F62354BAF0006A0C2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DEAA0FF2354BAF0006A0C2F /* BringMyOwnBeer___CombineUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7DEAA0F12354BAF0006A0C2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7DEAA0D82354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */;
-			targetProxy = 7DEAA0F02354BAF0006A0C2F /* PBXContainerItemProxy */;
-		};
-		7DEAA0FC2354BAF0006A0C2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7DEAA0D82354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */;
-			targetProxy = 7DEAA0FB2354BAF0006A0C2F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7DEAA0E72354BAF0006A0C2F /* LaunchScreen.storyboard */ = {
@@ -490,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -544,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -594,90 +444,6 @@
 			};
 			name = Release;
 		};
-		7DEAA1072354BAF0006A0C2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4U9BR6CX43;
-				INFOPLIST_FILE = "BringMyOwnBeer🍺+CombineTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BringMyOwnBeer🍺+Combine.app/BringMyOwnBeer🍺+Combine";
-			};
-			name = Debug;
-		};
-		7DEAA1082354BAF0006A0C2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4U9BR6CX43;
-				INFOPLIST_FILE = "BringMyOwnBeer🍺+CombineTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BringMyOwnBeer🍺+Combine.app/BringMyOwnBeer🍺+Combine";
-			};
-			name = Release;
-		};
-		7DEAA10A2354BAF0006A0C2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4U9BR6CX43;
-				INFOPLIST_FILE = "BringMyOwnBeer🍺+CombineUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = "BringMyOwnBeer🍺+Combine";
-			};
-			name = Debug;
-		};
-		7DEAA10B2354BAF0006A0C2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4U9BR6CX43;
-				INFOPLIST_FILE = "BringMyOwnBeer🍺+CombineUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.devfimuxd.BringMyOwnBeer---CombineUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = "BringMyOwnBeer🍺+Combine";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -695,24 +461,6 @@
 			buildConfigurations = (
 				7DEAA1042354BAF0006A0C2F /* Debug */,
 				7DEAA1052354BAF0006A0C2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7DEAA1062354BAF0006A0C2F /* Build configuration list for PBXNativeTarget "BringMyOwnBeer🍺+CombineTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DEAA1072354BAF0006A0C2F /* Debug */,
-				7DEAA1082354BAF0006A0C2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7DEAA1092354BAF0006A0C2F /* Build configuration list for PBXNativeTarget "BringMyOwnBeer🍺+CombineUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DEAA10A2354BAF0006A0C2F /* Debug */,
-				7DEAA10B2354BAF0006A0C2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

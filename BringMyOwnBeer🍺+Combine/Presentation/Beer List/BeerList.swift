@@ -18,8 +18,17 @@ struct BeerList: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.beers) { beer in
-                BeerRow(beer: beer)
+            List(viewModel.beers, id: \.id) { beer in
+                BeerRow(beer: beer).onAppear {
+                    let lastRowCount = self.viewModel.beers.count
+                    guard lastRowCount > 24 else {
+                        return
+                    }
+                    
+                    if lastRowCount - 1 == self.viewModel.beers.firstIndex { $0.id == beer.id} {
+                        self.viewModel.getBeers()
+                    }
+                }
             }
             .navigationBarTitle(Text("맥주리스트"))
         }

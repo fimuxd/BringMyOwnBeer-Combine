@@ -125,7 +125,6 @@
 				7DEAA0DE2354BAED006A0C2F /* SceneDelegate.swift */,
 				7DEAA0E22354BAF0006A0C2F /* Assets.xcassets */,
 				7DEAA0E72354BAF0006A0C2F /* LaunchScreen.storyboard */,
-				7DEAA0EA2354BAF0006A0C2F /* Info.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -201,6 +200,7 @@
 		7DEAA0DB2354BAED006A0C2F /* BringMyOwnBeer🍺+Combine */ = {
 			isa = PBXGroup;
 			children = (
+				7DEAA0EA2354BAF0006A0C2F /* Info.plist */,
 				7DA4774E23557D71004AD2FD /* Resource */,
 				7DA4774F23557D85004AD2FD /* Entity */,
 				7DA4775123557DC9004AD2FD /* Network */,
@@ -550,7 +550,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BringMyOwnBeer🍺+Combine/Preview Content\"";
 				DEVELOPMENT_TEAM = 4U9BR6CX43;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "/Users/boyoung/BringMyOwnBeer-Combine/BringMyOwnBeer🍺+Combine/Resource/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BringMyOwnBeer🍺+Combine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,7 +570,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BringMyOwnBeer🍺+Combine/Preview Content\"";
 				DEVELOPMENT_TEAM = 4U9BR6CX43;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "/Users/boyoung/BringMyOwnBeer-Combine/BringMyOwnBeer🍺+Combine/Resource/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BringMyOwnBeer🍺+Combine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -41,7 +41,7 @@ private extension SearchView {
         if let beer = viewModel.beer {
             return AnyView(details(for: beer))
         } else {
-            return AnyView(loading)
+            return AnyView(loadingView)
         }
     }
     
@@ -49,12 +49,12 @@ private extension SearchView {
         BeerResultView(beer: beer)
     }
     
-    var loading: some View {
+    var loadingView: some View {
         var loadingMessage: String {
-            let containID = viewModel.id != ""
+            let containID = viewModel.beer?.id != nil
             return containID
                 ? "\(viewModel.id)번 맥주를 불러오는 중..."
-                : "맥주 ID를 입력하세요."
+                : "1 ~ 325 사이의 숫자를 입력해주세요."
         }
         return Text(loadingMessage)
             .foregroundColor(.gray)

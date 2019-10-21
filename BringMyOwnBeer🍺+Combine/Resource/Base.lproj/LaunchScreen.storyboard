@@ -22,9 +22,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bv-X3-p6g" userLabel="BringMyOwnBeer🍺+Combine">
-                                <rect key="frame" x="59.5" y="811.5" width="295.5" height="30.5"/>
+                                <rect key="frame" x="53.5" y="811.5" width="307" height="30.5"/>
                                 <string key="text">BringMyOwnBeer🍺+Combine Example
-Copyright © 2019 Boyoung Park. All rights reserved.</string>
+Copyright © 2019 Bo-Young PARK. All rights reserved.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

@@ -20,12 +20,12 @@ class BeerListViewModel: ObservableObject {
         scheduler: DispatchQueue = DispatchQueue(label: "BeerListViewModel")
     ) {
         self.punkNetwork = punkService
-        _ = Just(Void())
-            .sink(receiveValue: getBeers)
+        _ = Just(nil)
+            .sink(receiveValue: getBeers(page:))
     }
     
-    func getBeers() {
-        punkNetwork.getBeers()
+    func getBeers(page: Int? = nil) {
+        punkNetwork.getBeers(page: page)
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { [weak self] value in
@@ -43,7 +43,7 @@ class BeerListViewModel: ObservableObject {
                     guard let self = self else {
                         return
                     }
-                    self.beers = beers
+                    self.beers += beers
                 }
             )
             .store(in: &disposables)

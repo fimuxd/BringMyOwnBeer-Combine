@@ -21,12 +21,15 @@ struct BeerList: View {
             List(viewModel.beers, id: \.id) { beer in
                 BeerRow(beer: beer).onAppear {
                     let lastRowCount = self.viewModel.beers.count
-                    guard lastRowCount > 24 else {
+                    let lastIndex = self.viewModel.beers.firstIndex { $0.id == beer.id }
+                    let page = lastRowCount / 75 + 1
+                    
+                    guard (74...325) ~= lastRowCount else {
                         return
                     }
                     
-                    if lastRowCount - 1 == self.viewModel.beers.firstIndex { $0.id == beer.id} {
-                        self.viewModel.getBeers()
+                    if lastRowCount - 1 == lastIndex {
+                        self.viewModel.getBeers(page: page)
                     }
                 }
             }

@@ -9,18 +9,6 @@
 import Foundation
 import Combine
 
-func decode<T: Decodable>(_ data: Data) -> AnyPublisher<T, PunkNetworkError> {
-    let decoder = JSONDecoder()
-    decoder.dateDecodingStrategy = .secondsSince1970
-    
-    return Just(data)
-        .decode(type: T.self, decoder: decoder)
-        .mapError { error in
-            .error("JSON parsing 에러")
-    }
-    .eraseToAnyPublisher()
-}
-
 class PunkNetworkImpl: PunkNetwork {
     private let session: URLSession
     

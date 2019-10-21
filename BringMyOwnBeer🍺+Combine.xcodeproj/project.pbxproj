@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2342B6235D7DDA0077809D /* DataDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2342B5235D7DDA0077809D /* DataDecode.swift */; };
 		7D2375E2235C2A0A005CB267 /* BeersData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D2375E1235C2A0A005CB267 /* BeersData.json */; };
 		7D2375E4235C2ACE005CB267 /* PunkNetworkImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2375E3235C2ACE005CB267 /* PunkNetworkImpl.swift */; };
 		7D2375E6235C2C2F005CB267 /* PunkNetworkDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2375E5235C2C2F005CB267 /* PunkNetworkDummy.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D2342B5235D7DDA0077809D /* DataDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecode.swift; sourceTree = "<group>"; };
 		7D2375E1235C2A0A005CB267 /* BeersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BeersData.json; sourceTree = "<group>"; };
 		7D2375E3235C2ACE005CB267 /* PunkNetworkImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkNetworkImpl.swift; sourceTree = "<group>"; };
 		7D2375E5235C2C2F005CB267 /* PunkNetworkDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkNetworkDummy.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				7DA4775E2355A931004AD2FD /* BeerResultView.swift */,
 				7D9DEF902355D22800D5E1BE /* ImageLoader.swift */,
+				7D2342B5235D7DDA0077809D /* DataDecode.swift */,
 				7D2375E1235C2A0A005CB267 /* BeersData.json */,
 			);
 			path = "Universal Components";
@@ -267,6 +270,7 @@
 				7DEAA10D2354BB3A006A0C2F /* PunkNetwork.swift in Sources */,
 				7DEAA10F2354BB5E006A0C2F /* BeerList.swift in Sources */,
 				7D9DEF8B2355B22400D5E1BE /* RandomView.swift in Sources */,
+				7D2342B6235D7DDA0077809D /* DataDecode.swift in Sources */,
 				7DEAA1112354BB70006A0C2F /* BeerListViewModel.swift in Sources */,
 				7DA47758235596A0004AD2FD /* SearchViewModel.swift in Sources */,
 				7DEAA0DD2354BAED006A0C2F /* AppDelegate.swift in Sources */,

@@ -100,25 +100,4 @@ final class ImageLoader: ObservableObject {
                 }
             )
     }
-    
-    func cancel() {
-        cancellable?.cancel()
-    }
 }
-
-//struct ImageLoadingView: View {
-//    @ObservedObject private var imageLoader: ImageLoader
-//
-//    init(image: URL) {
-//        imageLoader = ImageLoader(loadable: image)
-//    }
-//
-//    var body: some View {
-//        return ZStack {
-//            if imageLoader.image != nil {
-//                Image(uiImage: imageLoader.image!)
-//                    .resizable()
-//            }
-//        }
-//    }
-//}

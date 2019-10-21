@@ -15,13 +15,13 @@ struct BeerRow: View {
     
     init(beer: Beer) {
         self.beer = beer
-        self.imageLoader = ImageLoader(loadable: URL(string: beer.imageURL ?? "") ?? UIImage(), id: beer.id ?? 0)
+        self.imageLoader = ImageLoader(loadable: URL(string: beer.imageURL ?? "") ?? UIImage(imageLiteralResourceName: "placeHolderNoBeer"), id: beer.id ?? 0)
     }
     
     var body: some View {
         VStack {
             HStack {
-                Image(uiImage: imageLoader.image ?? UIImage())
+                Image(uiImage: imageLoader.image ?? UIImage(imageLiteralResourceName: "placeHolderNoBeer"))
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 120.0, height: 120.0, alignment: .center)

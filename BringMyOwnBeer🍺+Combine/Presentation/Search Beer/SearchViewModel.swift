@@ -14,7 +14,7 @@ class SearchViewModel: ObservableObject {
     @Published var id: String = ""
     
     private let punkNetwork: PunkNetwork
-    private var disposables = Set<AnyCancellable>()
+    private var cancellables = Set<AnyCancellable>()
     
     init(
         punkService: PunkNetwork,
@@ -49,6 +49,6 @@ class SearchViewModel: ObservableObject {
                     self.beer = beers.first
                 }
             )
-            .store(in: &disposables)
+            .store(in: &cancellables)
     }
 }

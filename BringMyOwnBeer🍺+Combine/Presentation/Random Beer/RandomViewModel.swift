@@ -13,7 +13,7 @@ class RandomViewModel: ObservableObject {
     @Published var beer: Beer? = nil
  
     private let punkNetwork: PunkNetwork
-    private var disposables = Set<AnyCancellable>()
+    private var cancellables = Set<AnyCancellable>()
     
     init(
         punkService: PunkNetwork,
@@ -44,7 +44,7 @@ class RandomViewModel: ObservableObject {
                     self.beer = beers.first
                 }
             )
-            .store(in: &disposables)
+            .store(in: &cancellables)
     }
 }
 

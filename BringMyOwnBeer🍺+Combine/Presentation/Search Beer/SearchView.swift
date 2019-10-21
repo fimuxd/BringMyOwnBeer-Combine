@@ -50,7 +50,13 @@ private extension SearchView {
     }
     
     var loading: some View {
-        Text("\(viewModel.id)번 맥주를 불러오는 중...")
+        var loadingMessage: String {
+            let containID = viewModel.id != ""
+            return containID
+                ? "\(viewModel.id)번 맥주를 불러오는 중..."
+                : "맥주 ID를 입력하세요."
+        }
+        return Text(loadingMessage)
             .foregroundColor(.gray)
     }
 }

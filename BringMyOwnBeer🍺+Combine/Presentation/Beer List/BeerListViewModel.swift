@@ -13,7 +13,7 @@ class BeerListViewModel: ObservableObject {
     @Published var beers: [Beer] = []
     
     private let punkNetwork: PunkNetwork
-    private var disposables = Set<AnyCancellable>()
+    private var cancellables = Set<AnyCancellable>()
     
     init(
         punkService: PunkNetwork,
@@ -46,6 +46,6 @@ class BeerListViewModel: ObservableObject {
                     self.beers += beers
                 }
             )
-            .store(in: &disposables)
+            .store(in: &cancellables)
     }
 }

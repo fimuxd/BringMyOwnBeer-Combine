@@ -28,8 +28,8 @@ class PunkNetworkImpl: PunkNetwork {
         self.session = session
     }
     
-    func getBeers() -> AnyPublisher<[Beer], PunkNetworkError> {
-        guard let url = makeGetBeersComponents().url else {
+    func getBeers(page: Int?) -> AnyPublisher<[Beer], PunkNetworkError> {
+        guard let url = makeGetBeersComponents(page: page).url else {
             let error = PunkNetworkError.error("유효하지 않은 URL")
             return Fail(error: error).eraseToAnyPublisher()
         }
@@ -84,11 +84,21 @@ private extension PunkNetworkImpl {
         static let path = "/v2/beers"
     }
     
-    func makeGetBeersComponents() -> URLComponents {
+    func makeGetBeersComponents(page: Int?) -> URLComponents {
         var components = URLComponents()
         components.scheme = PunkAPI.scheme
         components.host = PunkAPI.host
         components.path = PunkAPI.path
+        if let page = page {
+            components.queryItems = [
+                URLQueryItem(name: "page", value: "\(page)"),
+                URLQueryItem(name: "per_page", value: "80")
+            ]
+        } else {
+            components.queryItems = [
+                URLQueryItem(name: "per_page", value: "80")
+            ]
+        }
         
         return components
     }

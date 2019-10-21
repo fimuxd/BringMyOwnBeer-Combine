@@ -24,7 +24,7 @@ enum PunkNetworkError: Error {
 }
 
 protocol PunkNetwork {
-    func getBeers() -> AnyPublisher<[Beer], PunkNetworkError>
+    func getBeers(page: Int?) -> AnyPublisher<[Beer], PunkNetworkError>
     func getBeer(id: String) -> AnyPublisher<[Beer], PunkNetworkError>
     func getRandomBeer() -> AnyPublisher<[Beer], PunkNetworkError>
 }

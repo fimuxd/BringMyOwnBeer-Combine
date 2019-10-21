@@ -34,7 +34,7 @@ func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
 }
 
 class PunkNetworkDummy: PunkNetwork {
-    func getBeers() -> AnyPublisher<[Beer], PunkNetworkError> {
+    func getBeers(page: Int?) -> AnyPublisher<[Beer], PunkNetworkError> {
         return Just(beersData)
             .mapError { error in
                 .error("dummy data JSON parsing 에러")

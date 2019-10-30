@@ -11,6 +11,8 @@ import SwiftUI
 
 class BeerListViewModel: ObservableObject {
     @Published var beers: [Beer] = []
+    @Published var showingAlert: Bool = false
+    @Published var errorMessage: String = ""
     
     let appearedID = PassthroughSubject<Int?, PunkNetworkError>()
     
@@ -26,11 +28,12 @@ class BeerListViewModel: ObservableObject {
             .prepend(nil)
             .flatMap(model.getBeerList)
             .receive(on: DispatchQueue.main)
-
             .sink(
                 receiveCompletion: {
-                    guard case .failure = $0 else { return }
+                    guard case .failure(let error) = $0 else { return }
                     self.beers = []
+                    self.showingAlert = true
+                    self.errorMessage = error.message ?? "에러 발생🚨"
                 },
                 receiveValue:  { beers in
                     self.beers += beers

@@ -24,6 +24,9 @@ struct BeerList: View {
             }
             .navigationBarTitle(Text("맥주리스트"))
         }
+        .alert(isPresented: $viewModel.showingAlert) {
+            Alert(title: Text(viewModel.errorMessage))
+        }
     }
 }
 

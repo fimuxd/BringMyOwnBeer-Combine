@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import Combine
 
 struct BeerList: View {
     @ObservedObject var viewModel: BeerListViewModel
@@ -20,17 +19,7 @@ struct BeerList: View {
         NavigationView {
             List(viewModel.beers, id: \.id) { beer in
                 BeerRow(beer: beer).onAppear {
-                    let lastRowCount = self.viewModel.beers.count
-                    let lastIndex = self.viewModel.beers.firstIndex { $0.id == beer.id }
-                    let page = lastRowCount / 75 + 1
-                    
-                    guard (74...325) ~= lastRowCount else {
-                        return
-                    }
-                    
-                    if lastRowCount - 1 == lastIndex {
-                        self.viewModel.getBeers(page: page)
-                    }
+                    self.viewModel.appearedID.send(beer.id)
                 }
             }
             .navigationBarTitle(Text("맥주리스트"))
@@ -40,8 +29,7 @@ struct BeerList: View {
 
 struct BeerList_Previews: PreviewProvider {
     static var previews: some View {
-        let dummyService = PunkNetworkDummy()
-        let beerListViewModel = BeerListViewModel(punkService: dummyService)
+        let beerListViewModel = BeerListViewModel()
         
         return ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
             BeerList(viewModel: beerListViewModel)

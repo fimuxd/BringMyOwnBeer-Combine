@@ -44,7 +44,7 @@ class RandomViewModel: ObservableObject {
                     self.beer = beers.first
                 }
             )
-            .store(in: &cancellables)
+            .store(in: &cancellables)    // &= 메모리 참조
     }
 }
 

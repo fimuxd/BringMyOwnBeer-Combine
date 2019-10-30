@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let punkNetwork = PunkNetworkImpl()
         
-        let beerListViewModel = BeerListViewModel(punkService: punkNetwork)
+        let beerListViewModel = BeerListViewModel()
         let searchViewModel = SearchViewModel(punkService: punkNetwork)
         let randomViewModel = RandomViewModel(punkService: punkNetwork)
         

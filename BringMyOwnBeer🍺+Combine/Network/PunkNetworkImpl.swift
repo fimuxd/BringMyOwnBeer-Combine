@@ -23,11 +23,15 @@ class PunkNetworkImpl: PunkNetwork {
         }
         
         return session.dataTaskPublisher(for: URLRequest(url: url))
-            .mapError { error in
+            .mapError { _ in
                 PunkNetworkError.error("getBeers API 에러")
             }
-            .flatMap(maxPublishers: .max(1)) { data in
-                decode(data.data)
+            .flatMap { data in
+                return Just(data.data)
+                    .decode(type: [Beer].self, decoder: JSONDecoder())
+                    .mapError { _ in
+                        .error("JSON parsing 에러")
+                    }
             }
             .eraseToAnyPublisher()
     }

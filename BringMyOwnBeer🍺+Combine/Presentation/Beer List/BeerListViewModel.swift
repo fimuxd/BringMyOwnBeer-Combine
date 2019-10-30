@@ -12,37 +12,27 @@ import SwiftUI
 class BeerListViewModel: ObservableObject {
     @Published var beers: [Beer] = []
     
-    private let punkNetwork: PunkNetwork
+    let appearedID = PassthroughSubject<Int?, PunkNetworkError>()
+    
     private var cancellables = Set<AnyCancellable>()
     
-    init(
-        punkService: PunkNetwork,
-        scheduler: DispatchQueue = DispatchQueue(label: "BeerListViewModel")
-    ) {
-        self.punkNetwork = punkService
-        _ = Just(nil)
-            .sink(receiveValue: getBeers(page:))
-    }
-    
-    func getBeers(page: Int? = nil) {
-        punkNetwork.getBeers(page: page)
+    init(model: BeerListModel = BeerListModel()) {
+        let loadBeerList = appearedID
+            .map { model.getPageToPatch(beers: self.beers, id: $0) }
+            .filter { $0 != nil }
+            .eraseToAnyPublisher()
+        
+        loadBeerList
+            .prepend(nil)
+            .flatMap(model.getBeerList)
             .receive(on: DispatchQueue.main)
+
             .sink(
-                receiveCompletion: { [weak self] value in
-                    guard let self = self else {
-                        return
-                    }
-                    switch value {
-                    case .failure:
-                        self.beers = []
-                    case .finished:
-                        break
-                    }
+                receiveCompletion: {
+                    guard case .failure = $0 else { return }
+                    self.beers = []
                 },
-                receiveValue: { [weak self] beers in
-                    guard let self = self else {
-                        return
-                    }
+                receiveValue:  { beers in
                     self.beers += beers
                 }
             )

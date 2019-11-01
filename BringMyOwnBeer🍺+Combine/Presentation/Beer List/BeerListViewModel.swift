@@ -10,10 +10,12 @@ import Combine
 import SwiftUI
 
 class BeerListViewModel: ObservableObject {
+    //ViewModel -> View
     @Published var beers: [Beer] = []
     @Published var showingAlert: Bool = false
     @Published var errorMessage: String = ""
     
+    //View -> ViewModel
     let appearedID = PassthroughSubject<Int?, PunkNetworkError>()
     
     private var cancellables = Set<AnyCancellable>()

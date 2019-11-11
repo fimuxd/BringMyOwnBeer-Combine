@@ -16,15 +16,15 @@
 - 사이트: [스위프트 컨퍼런스](http://letswift.kr/2019/)
 - 주제: RxSwift to Combine (feat. SwiftUI)
 - 일시: 2019년 11월 12일 10:00 - 10:40  
+- 발표자료: (발표 후 업데이트 예정)
 
 ## Requirements
-- iOS 13.0
-- Swift 5.0
-- Xcode 11.0 (covered up with 11.1)
+- iOS 13.0+
+- Swift 5.0+
+- Xcode 11.0+
 
 ## Concept
 - BrewDog 사의 [PunkAPI](https://punkapi.com/documentation/v2)를 이용하여 맥주 리스트와 검색 등을 제공한다. 오직 Combine과 SwiftUI만으로!
-- Combine + SwiftUI를 MVVM 패턴으로 구현합니다. 
 - 기존 [BringMyOwnBeer🍺](https://github.com/fimuxd/BringMyOwnBeer-) 앱과 성능 차이를 알아봅니다.
 
 | 리스트 | 검색 | 랜덤 |

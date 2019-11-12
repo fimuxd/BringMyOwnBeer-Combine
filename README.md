@@ -16,7 +16,7 @@
 - 사이트: [스위프트 컨퍼런스](http://letswift.kr/2019/)
 - 주제: RxSwift to Combine (feat. SwiftUI)
 - 일시: 2019년 11월 12일 10:00 - 10:40  
-- 발표자료: (발표 후 업데이트 예정)
+- 발표자료: [SlideShare](https://www.slideshare.net/BoYoungPark11/rxswift-to-combine-192620911)
 
 ## Requirements
 - iOS 13.0+

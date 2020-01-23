@@ -32,4 +32,5 @@
 |<img src = "https://github.com/fimuxd/BringMyOwnBeer-Combine/blob/develop/ScreenShots/BeerList.png" width = 400> | <img src = "https://github.com/fimuxd/BringMyOwnBeer-Combine/blob/develop/ScreenShots/Search.png" width = 400>| <img src = "https://github.com/fimuxd/BringMyOwnBeer-Combine/blob/develop/ScreenShots/Random.png" width = 400>|
 
 ## Contact Me
-📱 +82 10.3316.1609 📧 iosdeveloperkr@gmail.com
+📱 +82 10.3316.1609 
+📧 me@boyoung.dev
